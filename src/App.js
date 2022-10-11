@@ -64,8 +64,8 @@ function App() {
   ]
   return (
     <>
-      {students.map(student => 
-        <Student student={student}/>
+      {students.map((student, idx) => 
+        <Student key={idx} student={student}/>
         )}
     </>
   );
